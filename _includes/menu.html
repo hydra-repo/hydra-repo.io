@@ -1,0 +1,32 @@
+<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+    <div class="container-fluid p-0">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+            {% asset logo.png alt="logo" %}
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                {% for item in site.data.menu %}
+                <li class="nav-item {% if page.group == item.title %}active{% endif %} {% if item.submenu %}dropdown dropdown-slide{% endif %}">
+                    <a class="nav-link" href="{% if item.link %}{{ item.link }}{% else %}#!{% endif %}">{{ item.title }} {% if item.submenu %}<i class="fas fa-angle-down"></i>{% endif %}
+                    {% if forloop.last == false %}    
+                        <span>/</span>
+                    {% endif %}    
+                    </a>
+                    {% if item.submenu %}
+                    <!-- Dropdown list -->
+                    <ul class="dropdown-menu">
+                        {% for subitem in item.submenu %}
+                        <li><a class="dropdown-item" href="{{ subitem.link }}">{{ subitem.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
