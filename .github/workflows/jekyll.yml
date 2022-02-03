@@ -14,15 +14,16 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v ${{ github.workspace }}:/srv/jekyll cawka/hydra-web-builder:latest /bin/bash -c "jekyll build --future"
+        -v ${{ github.workspace }}:/srv/jekyll cawka/hydra-web-builder:latest \
+        /bin/bash -c "chown -R jekyll:jekyll /srv/jekyll && jekyll build --future"
 
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@main
       env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "_site/"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_HOST: ${{ secrets.SSH_HOSTNAME }}
+          REMOTE_USER: ${{ secrets.SSH_USERNAME }}
           TARGET: "/var/www/hydra-repo.io/"
           EXCLUDE: "/tmpfiles/"
