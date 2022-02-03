@@ -8,3 +8,4 @@
 //= require jquery.syotimer
 
 //= require _custom
+//= require _bibtex-details

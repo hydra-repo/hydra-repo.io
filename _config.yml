@@ -27,20 +27,20 @@ font-awesome:
 # google_analytics:
 #    account: UA-XXXXX-X
 
-# # jekyll-scholar configurations
-# scholar:
-#   style: apa
-#   locale: en
-#   bibliography_template: pub
+# jekyll-scholar configurations
+scholar:
+  style: apa
+  locale: en
+  bibliography_template: pub
 
-#   sort_by: year,month
-#   order: descending
+  sort_by: year,month
+  order: descending
 
-#   source: ./_publications
-#   details_dir: assets/bibtex
-#   details_layout: bib-item-details.html
-#   details_link: BibTex
-#   bibliography: '**/*.bib'
+  source: ./_assets/bib
+  details_dir: assets/bibtex
+  details_layout: bib-item-details.html
+  details_link: BibTex
+  bibliography: '**/*.bib'
 
 assets:
   sources:

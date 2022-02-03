@@ -1,5 +1,16 @@
 @import 'variables.scss';
 
+// plugins
+
+@import "bootstrap";
+
+@import "magnific-popup";
+@import "slick";
+@import "slick-theme";
+@import "fontawesome";
+@import "solid";
+@import "brands";
+
 @import 'media-queries.scss';
 
 @import 'typography.scss';
@@ -34,13 +45,3 @@
 
 @import 'pages/contact.scss';
 
-// plugins
-
-@import "bootstrap";
-
-@import "magnific-popup";
-@import "slick";
-@import "slick-theme";
-@import "fontawesome";
-@import "solid";
-@import "brands";
