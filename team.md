@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "SDSF:Hydra - Team"
+title: "SDSF:<span class='alternate'>Hydra</span> - Team"
 group: Team
 
 team:

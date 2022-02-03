@@ -1,29 +1,27 @@
-.page-title{
+.page-title {
     position: relative;
-    padding: 50px 0 25px;
+    padding: 100px 0 25px;
     h3, li, a{
-	color: $light;
+        color: $light;
     }
     .title{
-	h3{
-	    font-weight: 500;
-	    text-transform: uppercase;
-	}
+        h3{
+            font-weight: 500;
+        }
     }
     .breadcrumb{
-	background: transparent;
-	.breadcrumb-item{
-	    float: none;
-	    display: inline-block;
-	    text-transform: uppercase;
-	    &.active{
-		color: $light;
-	    }
-	}
-	.breadcrumb-item+.breadcrumb-item::before{
-	    content: "\f105";
-	    font-family: FontAwesome;
-	    color: $light;
-	}
+        background: transparent;
+        .breadcrumb-item{
+            float: none;
+            display: inline-block;
+            &.active{
+                color: $light;
+            }
+        }
+        .breadcrumb-item+.breadcrumb-item::before{
+            content: "\f105";
+            font-family: FontAwesome;
+            color: $light;
+        }
     }
 }

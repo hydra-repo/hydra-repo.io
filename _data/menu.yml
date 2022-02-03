@@ -1,4 +1,16 @@
 - title: Home
   link: /index.html
+- title: Meetings
+  link: /meetings.html
 - title: Team
   link: /team.html
+- title: Publications
+  link: /publications.html
+- title: Codebase
+  link: /codebase.html
+# - title: Test
+#   submenu:
+#     - title: Foo
+#       link: "#"
+#     - title: Bar
+#       link: "#"
