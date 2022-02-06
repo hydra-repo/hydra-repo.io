@@ -10,9 +10,17 @@ team:
     image: team/susmit-shannigrahi.jpg
     link: https://www.tntech.edu/directory/engineering/faculty/susmit-shannigrahi.php
     students:
-      - name: Zachariah Threet
-        image: 
+      - name: Justin Presley
+        image: team/justin-presley.jpg
+        role: Graduate Student
+
+      - name: Xi Wang
+        image: team/xi-wang.jpg
         role: PhD Student
+
+      - name: Tymethy Brandel
+        image: team/tymethy-brandel.jpg
+        role: Graduate Student
 
   - campus: Clemson University
     name: Alex Feltus
@@ -39,7 +47,7 @@ team:
       - name: Proyash Podder
         image: team/proyash-podder.jpg
         role: PhD Candidate
- 
+
 ---
 
 <section class="section speakers">
@@ -62,7 +70,7 @@ team:
 		    </div>
 		</div>
 	    </div>
-            
+
             {% for student in pi.students %}
 	    <div class="col-lg-2 col-md-2 col-sm-3">
 		<div class="speaker-item">
@@ -78,7 +86,7 @@ team:
 		</div>
 	    </div>
             {% endfor %}
-            
+
         </div>
         {% endfor %}
     </div>
