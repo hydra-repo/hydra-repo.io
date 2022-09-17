@@ -5,4 +5,5 @@ group: Codebase
 
 ---
 
-* (Hydra reference implementation - v0.1)[https://github.com/justincpresley/ndn-hydra]
+
+* [Hydra reference implementation - v0.1](https://github.com/justincpresley/ndn-hydra)
