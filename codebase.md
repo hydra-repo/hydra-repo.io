@@ -5,4 +5,4 @@ group: Codebase
 
 ---
 
-TBD
+* (Hydra reference implementation - v0.1)[https://github.com/justincpresley/ndn-hydra]
